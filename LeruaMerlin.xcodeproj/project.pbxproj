@@ -14,6 +14,11 @@
 		F3D52E5B2628B579005DF7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D52E5A2628B579005DF7C0 /* Assets.xcassets */; };
 		F3D52E5E2628B579005DF7C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D52E5D2628B579005DF7C0 /* Preview Assets.xcassets */; };
 		F3D52E612628B579005DF7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D52E5F2628B579005DF7C0 /* LaunchScreen.storyboard */; };
+		F3D52E6C2628B5B6005DF7C0 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D52E6B2628B5B6005DF7C0 /* DetailScreen.swift */; };
+		F3D5AE4F2629536900867C0D /* GoodCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D5AE4E2629536900867C0D /* GoodCost.swift */; };
+		F3D5AE5426295F2E00867C0D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D5AE5326295F2E00867C0D /* ViewModel.swift */; };
+		F3D5AE6426297F3100867C0D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D5AE6326297F3100867C0D /* HomeScreen.swift */; };
+		F3D5AE682629800C00867C0D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D5AE672629800C00867C0D /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		F3D52E5D2628B579005DF7C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3D52E602628B579005DF7C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3D52E622628B579005DF7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D52E6B2628B5B6005DF7C0 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		F3D5AE4E2629536900867C0D /* GoodCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodCost.swift; sourceTree = "<group>"; };
+		F3D5AE5326295F2E00867C0D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F3D5AE6326297F3100867C0D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F3D5AE672629800C00867C0D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,14 @@
 		F3D52E502628B575005DF7C0 /* LeruaMerlin */ = {
 			isa = PBXGroup;
 			children = (
+				F3D5AE5C262963FE00867C0D /* models */,
+				F3D5AE5226295F1C00867C0D /* viewModel */,
+				F3D5AE4D2629534600867C0D /* contents */,
+				F3D52E6A2628B598005DF7C0 /* screens */,
+				F3D52E692628B581005DF7C0 /* apputils */,
 				F3D52E512628B575005DF7C0 /* AppDelegate.swift */,
 				F3D52E532628B575005DF7C0 /* SceneDelegate.swift */,
-				F3D52E552628B575005DF7C0 /* ContentView.swift */,
-				F3D52E5A2628B579005DF7C0 /* Assets.xcassets */,
-				F3D52E5F2628B579005DF7C0 /* LaunchScreen.storyboard */,
 				F3D52E622628B579005DF7C0 /* Info.plist */,
-				F3D52E572628B575005DF7C0 /* LeruaMerlin.xcdatamodeld */,
 				F3D52E5C2628B579005DF7C0 /* Preview Content */,
 			);
 			path = LeruaMerlin;
@@ -76,6 +87,50 @@
 				F3D52E5D2628B579005DF7C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3D52E692628B581005DF7C0 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				F3D52E552628B575005DF7C0 /* ContentView.swift */,
+				F3D52E5F2628B579005DF7C0 /* LaunchScreen.storyboard */,
+				F3D52E5A2628B579005DF7C0 /* Assets.xcassets */,
+				F3D52E572628B575005DF7C0 /* LeruaMerlin.xcdatamodeld */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		F3D52E6A2628B598005DF7C0 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				F3D52E6B2628B5B6005DF7C0 /* DetailScreen.swift */,
+				F3D5AE6326297F3100867C0D /* HomeScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		F3D5AE4D2629534600867C0D /* contents */ = {
+			isa = PBXGroup;
+			children = (
+				F3D5AE4E2629536900867C0D /* GoodCost.swift */,
+			);
+			path = contents;
+			sourceTree = "<group>";
+		};
+		F3D5AE5226295F1C00867C0D /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3D5AE5326295F2E00867C0D /* ViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		F3D5AE5C262963FE00867C0D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F3D5AE672629800C00867C0D /* Product.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +205,13 @@
 			files = (
 				F3D52E592628B575005DF7C0 /* LeruaMerlin.xcdatamodeld in Sources */,
 				F3D52E522628B575005DF7C0 /* AppDelegate.swift in Sources */,
+				F3D5AE682629800C00867C0D /* Product.swift in Sources */,
 				F3D52E542628B575005DF7C0 /* SceneDelegate.swift in Sources */,
+				F3D5AE4F2629536900867C0D /* GoodCost.swift in Sources */,
+				F3D5AE6426297F3100867C0D /* HomeScreen.swift in Sources */,
 				F3D52E562628B575005DF7C0 /* ContentView.swift in Sources */,
+				F3D52E6C2628B5B6005DF7C0 /* DetailScreen.swift in Sources */,
+				F3D5AE5426295F2E00867C0D /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
